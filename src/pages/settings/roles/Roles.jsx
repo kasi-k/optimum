@@ -8,6 +8,7 @@ import Filter from "../../../component/Filter";
 import Pagination from "../../../component/Pagination";
 import { RoleData } from "../../../component/Data";
 import { useSearch } from "../../../component/SearchBar";
+import { HiOutlineUserGroup } from "react-icons/hi2";
 
 const Roles = () => {
   const { searchTerm } = useSearch(); // Get search term from context
@@ -67,7 +68,7 @@ const Roles = () => {
         <div className="font-layout-font absolute -top-13 right-0 flex justify-end items-center gap-2 pb-2">
              <p onClick={handleAddRole} className="cursor-pointer flex items-center dark:text-white gap-2 bg-select_layout-dark px-4 py-2 text-sm rounded-md">
                    
-                     Add Role
+                     <HiOutlineUserGroup size={24}/> Add Role
                     </p>
           <p className="cursor-pointer flex items-center gap-1.5 dark:text-white dark:bg-layout-dark bg-layout-light px-4 py-2 rounded-md">
             <TbFileExport />

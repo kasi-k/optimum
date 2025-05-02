@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../../component/NavBar";
-import { TbBrandCampaignmonitor } from "react-icons/tb";
-import { TbClipboardList } from "react-icons/tb";
+import { GoPeople } from "react-icons/go";
+import { TbCalendarTime } from "react-icons/tb";
 import Patients from "./patients/Patients";
 import Appointment_Tab from "./appointment/Appointment_Tab";
 
@@ -21,7 +21,7 @@ const Appointment = () => {
             }`}
             onClick={() => setActiveTab("1")}
           >
-            <TbBrandCampaignmonitor size={24}/>Patients 
+            <GoPeople size={24}/>Patients 
           </p>
           <p
             className={`flex  gap-2  items-center  px-4 py-3 font-semibold rounded-sm text-sm ${
@@ -29,7 +29,7 @@ const Appointment = () => {
             }`}
             onClick={() => setActiveTab("2")}
           >
-           <TbClipboardList size={24}/> Appointments
+           <TbCalendarTime size={24}/> Appointments
           </p>
         </div>
         

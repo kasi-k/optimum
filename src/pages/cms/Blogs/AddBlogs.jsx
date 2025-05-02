@@ -45,7 +45,7 @@ const AddBlogs = ({ onSubmit,onclose}) => {
           Save
         </p>
       </div>
-      <div className="flex  gap-4  rounded-md text-white">
+      <div className="flex  gap-4  rounded-md dark:text-white">
       <div className="grid grid-cols-12 items-center gap-6 w-1/2 dark:bg-layout-dark bg-layout-light rounded-md  shadow-md p-6">
         <label className="col-span-4 ">Topic</label>
         <input

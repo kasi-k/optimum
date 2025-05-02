@@ -15,93 +15,93 @@ const Edit_Patients = ({onclose}) => {
                     <div className="p-4">
                       <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="flex  col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className=" font-medium col-span-1">
                             Name
                           </label>
                           <input
                             type="text"
                             placeholder="Name"
-                            className="p-2 rounded-md bg-transparent border w-72 col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md bg-transparent border w-72 col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex  col-span-2 justify-between items-center gap-10">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className="  font-medium col-span-1">
                             Phone number
                           </label>
                           <input
                             type="text"
                             placeholder="Phone number"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className="  font-medium col-span-1">
                             Email ID
                           </label>
                           <input
                             type="email"
                             placeholder="Email ID"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className="  font-medium col-span-1">
                             Age
                           </label>
                           <input
                             type="number"
                             placeholder="Age"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className=" font-medium col-span-1">
                             Height
                           </label>
                           <input
                             type="text"
                             placeholder="Height"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className=" font-medium col-span-1">
                             Weight
                           </label>
                           <input
                             type="text"
                             placeholder="Weight"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex  col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className="  font-medium col-span-1">
                             Location
                           </label>
                           <input
                             type="text"
                             placeholder="Location"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex  col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className=" font-medium col-span-1">
                             Address
                           </label>
                           <input
                             type="text"
                             placeholder="Address"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 "
                           />
                         </div>
                         <div className="flex sm:col-span-2 justify-between items-center">
-                          <label className=" text-white font-medium col-span-1">
+                          <label className= "font-medium col-span-1">
                             Status
                           </label>
                           <input
                             type="text"
                             placeholder="Status"
-                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 text-white"
+                            className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600"
                           />
                         </div>
                       </form>

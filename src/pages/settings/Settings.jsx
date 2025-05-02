@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../../component/NavBar";
-import { TbBrandCampaignmonitor } from "react-icons/tb";
-import { TbClipboardList } from "react-icons/tb";
+import { LuUsers } from "react-icons/lu";
+import { HiOutlineUserGroup } from "react-icons/hi2";
 import User from "./users/User";
 import Roles from "./roles/Roles";
 
@@ -24,7 +24,7 @@ const Settings = () => {
             }`}
             onClick={() => setActiveTab("1")}
           >
-            <TbBrandCampaignmonitor size={24}/> User
+            <LuUsers size={24}/> User
           </p>
           <p
             className={`flex  gap-2  items-center  px-4 py-3 font-semibold rounded-sm text-sm ${
@@ -32,7 +32,7 @@ const Settings = () => {
             }`}
             onClick={() => setActiveTab("2")}
           >
-           <TbClipboardList size={24}/> Roles
+           <HiOutlineUserGroup size={24}/> Roles
           </p>
         </div>
       </div>

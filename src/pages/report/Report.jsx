@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../../component/NavBar";
-import { TbBrandCampaignmonitor } from "react-icons/tb";
-import { TbClipboardList } from "react-icons/tb";
+import { TbReportMoney } from "react-icons/tb";
+import { TbReport } from "react-icons/tb";
 import Campaign_Report from "./Campaign_Report";
 import Revenue_Report from "./Revenue_Report";
 
@@ -22,7 +22,7 @@ const Report = () => {
             }`}
             onClick={() => setActiveTab("1")}
           >
-            <TbBrandCampaignmonitor size={24}/> Revenue Report 
+            <TbReportMoney size={24}/> Revenue Report 
           </p>
           <p
             className={`flex  gap-2  items-center  px-4 py-3 font-semibold rounded-sm text-sm ${
@@ -30,7 +30,7 @@ const Report = () => {
             }`}
             onClick={() => setActiveTab("2")}
           >
-           <TbClipboardList size={24}/> Campaign Report
+           <TbReport size={24}/> Campaign Report
           </p>
         </div>
       </div>

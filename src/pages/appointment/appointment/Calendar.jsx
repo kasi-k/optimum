@@ -13,6 +13,10 @@ const appointments = [
   { date: "2025-04-13", status: "Pending" },
   { date: "2025-04-19", status: "Cancelled" },
   { date: "2025-04-30", status: "Completed" },
+  { date: "2025-03-19", status: "Cancelled" },
+  { date: "2025-03-30", status: "Completed" },
+  { date: "2025-05-01", status: "Cancelled" },
+  { date: "2025-05-02", status: "Completed" },
 ];
 
 const statuses = {
@@ -31,7 +35,7 @@ const barstatuses = {
 
 const Calendar = () => {
   const [selectedYear, setSelectedYear] = useState(2025);
-  const [selectedMonth, setSelectedMonth] = useState(3); // April (0-based index)
+  const [selectedMonth, setSelectedMonth] = useState(3);
 
   const currentMonth = new Date(selectedYear, selectedMonth);
   const start = startOfMonth(currentMonth);
@@ -53,6 +57,14 @@ const Calendar = () => {
     "November",
     "December",
   ];
+
+  const filteredAppointments = appointments.filter((appt) => {
+    const apptDate = new Date(appt.date);
+    return (
+      apptDate.getMonth() === selectedMonth &&
+      apptDate.getFullYear() === selectedYear
+    );
+  });
 
   return (
     <div className="flex  dark:text-white text-black  ">
@@ -123,7 +135,9 @@ const Calendar = () => {
                     }`}
                   />
                 )}
-                <div className="flex justify-center  items-center text-sm w-full h-full">{format(day, "dd")}</div>
+                <div className="flex justify-center  items-center text-sm w-full h-full">
+                  {format(day, "dd")}
+                </div>
               </div>
             );
           })}
@@ -132,7 +146,7 @@ const Calendar = () => {
 
       {/* Appointment List */}
       <div className="w-1/3 p-2 space-y-1">
-        {appointments.map((appt, idx) => (
+        {filteredAppointments.map((appt, idx) => (
           <div
             key={idx}
             className="flex  justify-center items-center dark:bg-layout-dark  bg-layout-light rounded-md space-x-3"

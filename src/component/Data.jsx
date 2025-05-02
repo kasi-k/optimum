@@ -178,20 +178,12 @@ export const PatientsData = [
 
 export const AppointmentData = [
   {
-    tokenNo: "TK1001",
-    name: "John Doe",
-    phoneNumber: "1234567890",
-    date: "2025-04-28",
-    slot: "10:00 AM - 11:00 AM",
-    status: "Pending",
-  },
-  {
     tokenNo: "TK1002",
     name: "Jane Smith",
     phoneNumber: "9876543210",
     date: "2025-04-29",
     slot: "11:00 AM - 12:00 PM",
-    status: "Completed",
+    status: "completed",
   },
   {
     tokenNo: "TK1003",
@@ -199,14 +191,14 @@ export const AppointmentData = [
     phoneNumber: "5551234567",
     date: "2025-04-30",
     slot: "09:00 AM - 10:00 AM",
-    status: "Cancelled",
+    status: "cancelled",
   }, {
     tokenNo: "TK1003",
     name: "John Doe",
     phoneNumber: "1234567890",
     date: "2025-04-28",
     slot: "10:00 AM - 11:00 AM",
-    status: "Reschedule",
+    status: "reschedule",
   },
 ];
 

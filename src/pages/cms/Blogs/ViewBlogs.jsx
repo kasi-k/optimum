@@ -1,6 +1,6 @@
 import React from "react";
 
-const ViewBlog = ({ post }) => {
+const ViewBlogs = ({ post }) => {
   return (
     <div className="dark:bg-layout-dark bg-layout-light text-white  rounded shadow-md  gap-4 ">
       <div>
@@ -26,4 +26,4 @@ const ViewBlog = ({ post }) => {
   );
 };
 
-export default ViewBlog;
+export default ViewBlogs;

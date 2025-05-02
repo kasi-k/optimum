@@ -10,6 +10,7 @@ import AddUser from "./AddUser";
 import EditUser from "./EditUser";
 import { TbFileExport } from "react-icons/tb";
 import { RoleData } from "../../../component/Data";
+import { LuUserRoundPlus } from "react-icons/lu";
 
 const User = () => {
   const { searchTerm } = useSearch(); // Get search term from context
@@ -70,7 +71,7 @@ const User = () => {
         <div className="font-layout-font absolute -top-13 right-0 flex justify-end items-center gap-2 pb-2">
              <p onClick={handleAddUser} className="cursor-pointer flex items-center dark:text-white gap-2 bg-select_layout-dark px-4 py-2 text-sm rounded-md">
                  
-                     Add User
+                     <LuUserRoundPlus/>Add User
                     </p>
           <p className="cursor-pointer flex items-center gap-1.5 dark:text-white dark:bg-layout-dark bg-layout-light px-4 py-2 rounded-md">
             <TbFileExport />

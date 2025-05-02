@@ -58,13 +58,13 @@ const Layout = () => {
 
   return (
     <>
-      <div className="w-screen h-screen flex relative sm:static  bg-overall_bg-light dark:bg-overall_bg-dark">
+      <div className="w-screen h-screen flex relative sm:static  bg-overall_bg-light dark:bg-overall_bg-dark ">
         <div
           className={`${
             !open
               ? `sm:static absolute sm:w-[320px] w-4/5 z-10 sm:z-0`
               : `sm:w-28 hidden  `
-          }  h-screen  sm:block dark:bg-layout-dark bg-layout-light`}
+          }  h-screen  sm:block dark:bg-layout-dark bg-layout-light overflow-auto no-scrollbar`}
         >
           <div
             className={`${!open ? `pl-3 pt-3` : ` pt-6 `}`}

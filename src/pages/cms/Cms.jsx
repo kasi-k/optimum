@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import NavBar from "../../component/NavBar";
-import { TbBrandCampaignmonitor } from "react-icons/tb";
-import { TbClipboardList } from "react-icons/tb";
+import { IoBrowsersOutline } from "react-icons/io5";
+import { CgWebsite } from "react-icons/cg";
 import BlogTab from "./Blogs/BlogTab";
 import WebsiteUpdates from "./website/WebsiteUpdates";
-
-
 
 const Cms = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -23,7 +21,8 @@ const Cms = () => {
             }`}
             onClick={() => setActiveTab("1")}
           >
-            <TbBrandCampaignmonitor size={24}/>Website Updates 
+            <IoBrowsersOutline size={24} />
+            Website Updates
           </p>
           <p
             className={`flex  gap-2  items-center  px-4 py-3 font-semibold rounded-sm text-sm ${
@@ -31,11 +30,12 @@ const Cms = () => {
             }`}
             onClick={() => setActiveTab("2")}
           >
-           <TbClipboardList size={24}/>Blogs
+            <CgWebsite size={24} />
+            Blogs
           </p>
         </div>
       </div>
-      {activeTab === "1" ?<WebsiteUpdates/> : <BlogTab/> }
+      {activeTab === "1" ? <WebsiteUpdates /> : <BlogTab />}
     </>
   );
 };

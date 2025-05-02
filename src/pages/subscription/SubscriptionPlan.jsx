@@ -6,15 +6,14 @@ const SubscriptionPlans = () => {
     <>
       <NavBar title="Subscription" pagetitle="Subscription Plans" />
       <div className=" font-layout-font  overflow-auto">
-<div className="flex justify-between items-center dark:text-white text-black mx-1 py-2b font-extralight text-sm">
+<div className="flex justify-between items-center dark:text-white text-black mx-2 py-2 mt-2 font-extralight text-sm">
   <div>
-    <p>Subscription</p>
     <p className="font-bold text-lg">Change the Plan</p>
     <p>You can upgrade the plan here</p>
   </div>
   <div>
     <p className="font-extrabold text-lg">Current Plan:Basic</p>
-    <p>Expired on:30th Aug,2025</p>
+    <p className="text-sm">Expired on:30th Aug,2025</p>
   </div>
 </div>
         <div className="flex  p-2 gap-2">

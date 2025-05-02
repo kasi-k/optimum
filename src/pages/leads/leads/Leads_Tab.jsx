@@ -88,8 +88,8 @@ const Leads_Tab = () => {
             <td>{data.location}</td>
             <td>{data.status}</td>
             <td className="space-x-2 pl-4 p-2.5 rounded-r-lg">
-              <button className="bg-blue-200 p-1.5 rounded-sm">
-                <Pencil size={16} className="text-blue-600" onClick={()=>{setEdit_lead(true)}}/>
+              <button onClick={()=>{setEdit_lead(true)}} className="bg-blue-200 p-1.5 rounded-sm">
+                <Pencil size={16} className="text-blue-600"/>
               </button>
               <button className="bg-green-200 p-1.5 rounded-sm">
                 <LuEye size={16} className="text-green-600" />

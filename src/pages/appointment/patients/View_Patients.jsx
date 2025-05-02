@@ -16,81 +16,81 @@ const View_Patients = ({ onclose }) => {
           <div className="p-2">
             <form className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="flex  col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className=" font-medium col-span-1">
                  Patient ID
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent col-span-1  text-slate-100 text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent col-span-1  text-sm">
                 #2345</p>
               </div>
               <div className="flex  col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Name
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent col-span-1  text-slate-100 text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent col-span-1   text-sm">
                 Dinesh Kumar</p>
               </div>
               <div className="flex  col-span-2 justify-between items-center gap-10">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Phone number
                 </label>
 
-                <p className="p-2 rounded-md w-52 bg-transparent col-span-1 text-slate-100 text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent col-span-1  text-sm">
                   7550378859
                 </p>
               </div>
               <div className="flex col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Email ID
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent  col-span-1  text-slate-100 text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent  col-span-1   text-sm">
                   vishva2202005@gamil.com
                 </p>
               </div>{" "}
               <div className="flex col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Age
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent  col-span-1 text-slate-100  text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent  col-span-1   text-sm">
                   18
                 </p>
               </div>
               <div className="flex col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Height
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent  col-span-1  text-slate-100  text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent  col-span-1   text-sm">
                   6ft
                 </p>
               </div>
               <div className="flex col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Weight
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent col-span-1 text-slate-100  text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent col-span-1  text-sm">
                   13.09
                 </p>
               </div>
               <div className="flex  col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Location
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent col-span-1 text-slate-100  text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent col-span-1  text-sm">
                   Chennai
                 </p>
               </div>
               <div className="flex  col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Address
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent col-span-1 text-slate-100  text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent col-span-1  text-sm">
                   Address
                 </p>
               </div>
               <div className="flex sm:col-span-2 justify-between items-center">
-                <label className=" text-white font-medium col-span-1">
+                <label className="  font-medium col-span-1">
                   Status
                 </label>
-                <p className="p-2 rounded-md w-52 bg-transparent col-span-1 text-slate-100  text-sm">
+                <p className="p-2 rounded-md w-52 bg-transparent col-span-1   text-sm">
                   active
                 </p>
               </div>

@@ -10,9 +10,9 @@ const Gallery = () => {
   };
 
   return (
-    <div className="w-full dark:bg-layout-dark dark:text-white bg-layout-light h-fit  p-8 text-white">
+    <div className="w-full dark:bg-layout-dark dark:text-white bg-layout-light h-fit  p-8 ">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-3xl font-medium">Gallery</h2>
+        <h2 className="text-3xl font-medium ">Gallery</h2>
         <label className="bg-select_layout-dark  dark:text-white px-4 py-2 rounded-md cursor-pointer">
           Add Images
           <input

@@ -291,7 +291,7 @@ const Appointment_Tab = () => {
         
         </div>
       )}
-      {viewCalendar && <Calendar />}
+      {viewCalendar && <Calendar onclose = {() =>setViewCalendar(false)}/>}
     </>
   );
 };

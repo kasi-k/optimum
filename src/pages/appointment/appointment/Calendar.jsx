@@ -6,6 +6,7 @@ import {
   format,
   isSameDay,
 } from "date-fns";
+import { IoArrowBackSharp } from "react-icons/io5";
 
 const appointments = [
   { date: "2025-04-06", status: "Confirmed" },
@@ -33,7 +34,7 @@ const barstatuses = {
   Completed: "bg-purple-500 ",
 };
 
-const Calendar = () => {
+const Calendar = ({onclose}) => {
   const [selectedYear, setSelectedYear] = useState(2025);
   const [selectedMonth, setSelectedMonth] = useState(3);
 
@@ -67,6 +68,7 @@ const Calendar = () => {
   });
 
   return (
+    <>
     <div className="flex  dark:text-white text-black  ">
       {/* Calendar Section */}
       <div className="w-2/3 px-1 ">
@@ -172,8 +174,15 @@ const Calendar = () => {
             </div>
           </div>
         ))}
+        
       </div>
     </div>
+    <div className="flex justify-end items-center relative">
+      <p onClick={onclose}  className=" cursor-pointer absolute flex items-center gap-2 bg-select_layout-dark rounded-sm py-1.5 px-4 -bottom-20">
+      <IoArrowBackSharp /> back
+      </p>
+    </div>
+    </>
   );
 };
 

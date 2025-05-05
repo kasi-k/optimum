@@ -16,6 +16,14 @@ const Edit_leads = ({ onclose }) => {
             <p className="text-center font-semibold text-lg">Edit Leads</p>
             <div className="p-4">
               <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex  col-span-2 justify-between items-center">
+                  <label className="font-medium col-span-1">Leads ID</label>
+                  <input
+                    type="text"
+                    placeholder="leads ID"
+                    className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 dark:placeholder:text-white placeholder:text-black"
+                  />
+                </div>
                 <div className="flex  col-span-2 justify-between items-center">
                   <label className="  font-medium col-span-1">Name</label>
                   <input
@@ -40,30 +48,8 @@ const Edit_leads = ({ onclose }) => {
                     className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 dark:placeholder:text-white placeholder:text-black"
                   />
                 </div>
-                <div className="flex col-span-2 justify-between items-center">
-                  <label className="  font-medium col-span-1">Age</label>
-                  <input
-                    type="number"
-                    placeholder="Age"
-                    className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 dark:placeholder:text-white placeholder:text-black"
-                  />
-                </div>
-                <div className="flex col-span-2 justify-between items-center">
-                  <label className=" font-medium col-span-1">Height</label>
-                  <input
-                    type="text"
-                    placeholder="Height"
-                    className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 dark:placeholder:text-white placeholder:text-black"
-                  />
-                </div>
-                <div className="flex col-span-2 justify-between items-center">
-                  <label className="  font-medium col-span-1">Weight</label>
-                  <input
-                    type="text"
-                    placeholder="Weight"
-                    className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 dark:placeholder:text-white placeholder:text-black"
-                  />
-                </div>
+              
+               
                 <div className="flex  col-span-2 justify-between items-center">
                   <label className="  font-medium col-span-1">Location</label>
                   <input
@@ -72,14 +58,7 @@ const Edit_leads = ({ onclose }) => {
                     className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 dark:placeholder:text-white placeholder:text-black"
                   />
                 </div>
-                <div className="flex  col-span-2 justify-between items-center">
-                  <label className="font-medium col-span-1">Address</label>
-                  <input
-                    type="text"
-                    placeholder="Address"
-                    className="p-2 rounded-md w-72 bg-transparent border col-span-1 border-gray-600 dark:placeholder:text-white placeholder:text-black"
-                  />
-                </div>
+            
                 <div className="flex sm:col-span-2 justify-between items-center">
                   <label className="  font-medium col-span-1">Status</label>
                   <input

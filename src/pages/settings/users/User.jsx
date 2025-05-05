@@ -11,6 +11,7 @@ import EditUser from "./EditUser";
 import { TbFileExport } from "react-icons/tb";
 import { RoleData } from "../../../component/Data";
 import { LuUserRoundPlus } from "react-icons/lu";
+import DeleteModal from "../../../component/DeleteModal";
 
 const User = () => {
   const { searchTerm } = useSearch(); // Get search term from context
@@ -153,6 +154,7 @@ const User = () => {
       />
       {addUserModal && <AddUser onclose={() => setAddUserModal(false)} />}
       {editUserModal && <EditUser onclose={() => setEditUserModal(false)} />}
+        {deleteModal && <DeleteModal onclose={ ()=>setDeleteModal(false)} title="User"/>}
     </>
   );
 };

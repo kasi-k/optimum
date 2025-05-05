@@ -9,12 +9,14 @@ import Pagination from "../../component/Pagination";
 import Edit_Finance from "./Edit_Finance";
 import { useSearch } from "../../component/SearchBar";
 import Filter from "../../component/Filter";
+import DeleteModal from "../../component/DeleteModal";
 
 const Finance = () => {
   const { searchTerm } = useSearch();
   const [filteredData, setFilteredData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [Edit_Finance_Model, setEdit_Finance_Model] = useState(false);
+  const [deleteModal, setDeleteModal] = useState(false)
   const itemsPerPage = 10;
 
   useEffect(() => {
@@ -99,12 +101,12 @@ const Finance = () => {
                 <td className="pl-4 p-2.5 rounded-r-lg">
                   <div className="flex justify-center items-center gap-3">
                     <button
-                      className="p-1 rounded-sm  bg-blue-200 text-blue-500 "
+                      className=" cursor-pointer p-1 rounded-sm  bg-blue-200 text-blue-500 "
                       onClick={OpenModel}
                     >
                       <Pencil size={16} />
                     </button>
-                    <button className="p-1 rounded-sm  bg-red-200 text-red-500">
+                    <button onClick={ () =>setDeleteModal(true)} className=" cursor-pointer p-1 rounded-sm  bg-red-200 text-red-500">
                       <FiTrash2 size={16} />
                     </button>
                   </div>
@@ -124,6 +126,7 @@ const Finance = () => {
       {Edit_Finance_Model && (
         <Edit_Finance onClose={()=>{setEdit_Finance_Model(false)}} />
       )}
+      {deleteModal && <DeleteModal onclose={ () =>setDeleteModal(false)} title="Finance"/>}
     </div>
   );
 };

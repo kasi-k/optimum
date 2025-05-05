@@ -240,13 +240,13 @@ const Appointment_Tab = () => {
                       </td>
                       <td className="space-x-2 p-2.5 rounded-r-lg">
                         <button
-                          className="bg-blue-200 p-1.5 rounded-sm"
+                          className=" cursor-pointer bg-blue-200 p-1.5 rounded-sm"
                           onClick={() => handleEdit(data)}
                         >
                           <Pencil size={16} className="text-blue-600" />
                         </button>
                         <button
-                          className="bg-green-200 p-1.5 rounded-sm"
+                          className=" cursor-pointer bg-green-200 p-1.5 rounded-sm"
                           onClick={() => {
                             setSelectedStatus(data.status);
                             setIsModalOpen(true);

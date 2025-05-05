@@ -9,13 +9,12 @@ import Pagination from "../../../component/Pagination";
 import { RoleData } from "../../../component/Data";
 import { useSearch } from "../../../component/SearchBar";
 import { HiOutlineUserGroup } from "react-icons/hi2";
+import DeleteModal from "../../../component/DeleteModal";
 
 const Roles = () => {
   const { searchTerm } = useSearch(); // Get search term from context
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredData, setFilteredData] = useState([]);
-  const [addUserModal, setAddUserModal] = useState(false);
-  const [editUserModal, setEditUserModal] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
   const navigate = useNavigate();
 
@@ -112,6 +111,7 @@ const Roles = () => {
                       <FiEdit2 />
                     </button>
                     <button
+                    onClick={ () =>setDeleteModal(true)}
                       className=" cursor-pointer mx-2 p-1.5  bg-pink-200 text-red-500 rounded-sm"
                     >
                       {" "}
@@ -137,6 +137,7 @@ const Roles = () => {
         currentPage={currentPage}
         onPageChange={setCurrentPage}
       />
+      {deleteModal && <DeleteModal onclose={ () =>setDeleteModal(false)} title="Role"/>}
     </>
   );
 };

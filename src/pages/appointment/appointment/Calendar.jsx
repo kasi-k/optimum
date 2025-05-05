@@ -10,7 +10,9 @@ import { IoArrowBackSharp } from "react-icons/io5";
 
 const appointments = [
   { date: "2025-04-06", status: "Confirmed" },
+  { date: "2025-04-08", status: "Pending" },
   { date: "2025-04-08", status: "Confirmed" },
+  { date: "2025-04-08", status: "Completed" },
   { date: "2025-04-13", status: "Pending" },
   { date: "2025-04-19", status: "Cancelled" },
   { date: "2025-04-30", status: "Completed" },
@@ -177,8 +179,8 @@ const Calendar = ({onclose}) => {
         
       </div>
     </div>
-    <div className="flex justify-end items-center relative">
-      <p onClick={onclose}  className=" cursor-pointer absolute flex items-center gap-2 bg-select_layout-dark rounded-sm py-1.5 px-4 -bottom-20">
+    <div className="flex justify-end  mb-8 relative ">
+      <p onClick={onclose}  className=" cursor-pointer absolute flex items-center gap-2 bg-select_layout-dark rounded-sm py-1.5 px-4 -bottom-10 right-4 ">
       <IoArrowBackSharp /> back
       </p>
     </div>

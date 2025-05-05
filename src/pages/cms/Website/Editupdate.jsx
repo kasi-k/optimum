@@ -5,11 +5,9 @@ import { GrLocation } from "react-icons/gr";
 import { FiPhone } from "react-icons/fi";
 import { TbDirectionSign } from "react-icons/tb";
 import { FiInfo } from "react-icons/fi";
-import { MessageSquareMore } from "lucide-react";
-import { Pencil } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
-const EditUpdates = ({ onclose }) => {
+
+const Editupdate = ({ onclose }) => {
   return (
     <>
       <div className=" font-layout-font flex justify-between items-start">
@@ -71,4 +69,4 @@ const EditUpdates = ({ onclose }) => {
   );
 };
 
-export default EditUpdates;
+export default Editupdate;

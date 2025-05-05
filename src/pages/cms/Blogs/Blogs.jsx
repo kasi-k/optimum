@@ -7,11 +7,19 @@ import { useNavigate } from "react-router-dom";
 const Blogs = ({ post }) => {
   const navigate = useNavigate();
   const [expanded, setExpanded] = useState(false);
-  const [viewBlogs, setViewBlogs] = useState(false);
+
 
   const paragraphs = post.description.split(/\n+/);
 
   const displayedParagraphs = expanded ? paragraphs : paragraphs.slice(0, 1);
+
+  const handleView = () =>{
+    navigate("/viewblog",{ state: { post } })
+  }
+
+  const handleEdit = () =>{
+    navigate("/editblog",{ state: { post } })
+  }
   return (
     <>
       <div className="font-layout-font  overflow-auto dark:bg-layout-dark bg-layout-light dark:text-white p-4 rounded shadow-md mt-2 ">
@@ -36,18 +44,18 @@ const Blogs = ({ post }) => {
         <div className="flex justify-end items-center mt-4">
           <div className="flex gap-2">
             <button
-              onClick={() => setViewBlogs(true)}
+              onClick={handleView}
               className="bg-green-200 p-1.5 rounded"
             >
               <LuEye size={16} className="text-green-600" />
             </button>
-            <button className="bg-blue-200 p-1.5 rounded">
+            <button onClick = {handleEdit} className="bg-blue-200 p-1.5 rounded">
               <Pencil size={16} className="text-blue-600" />
             </button>
           </div>
         </div>
       </div>
-      {viewBlogs && <ViewBlogs/>}
+     
     </>
   );
 };

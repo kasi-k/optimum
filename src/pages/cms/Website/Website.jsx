@@ -8,10 +8,7 @@ import { FiInfo } from "react-icons/fi";
 import { MessageSquareMore } from "lucide-react";
 import { Pencil } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import EditUpdate from "./EditUpdates";
-
-
-
+import Editupdate from "./Editupdate";
 
 const Website = () => {
   const navigate = useNavigate();
@@ -71,7 +68,7 @@ const Website = () => {
           </div>
         </div>
       )}
-      {editWebsite && <EditUpdate onclose={() =>setEditWebsite(false)}/>}
+      {editWebsite && <Editupdate onclose={() =>setEditWebsite(false)}/>}
     </>
   );
 };

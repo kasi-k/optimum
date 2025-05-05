@@ -4,9 +4,9 @@ const campaigns = [
   { id: "#25235", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
   { id: "#25236", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
   { id: "#25237", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
-  { id: "#25235", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
-  { id: "#25236", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
-  { id: "#25237", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
+  { id: "#25238", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
+  { id: "#25239", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
+  { id: "#25240", channel: "Instagram", budget: "₹4687", cpl: "₹4687", leads: 51 },
 ];
 
 const RecentCampaigns = () => {

@@ -64,7 +64,7 @@ const Patients = () => {
             <tr className="font-semibold text-sm dark:bg-layout-dark bg-layout-light border-b-2 dark:border-overall_bg-dark border-overall_bg-light">
               <th className="p-3.5 rounded-l-lg">S.no</th>
               {[
-                "Lead ID",
+                "Patient ID",
                 "Name",
                 "Phone Number",
                 "Email Id",

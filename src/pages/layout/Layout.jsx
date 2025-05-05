@@ -58,7 +58,7 @@ const Layout = () => {
 
   return (
     <>
-      <div className="w-screen h-screen flex relative sm:static  bg-overall_bg-light dark:bg-overall_bg-dark ">
+      <div className="font-layout-font w-screen h-screen flex relative sm:static  bg-overall_bg-light dark:bg-overall_bg-dark ">
         <div
           className={`${
             !open
@@ -113,7 +113,7 @@ const Layout = () => {
                       {menu.icon}
                     </span>
                     <p
-                      className={`${open && `hidden`} font-layout-font text-xl`}
+                      className={`${open && `hidden`} font-layout-font text-lg`}
                     >
                       {menu.title}
                     </p>

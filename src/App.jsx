@@ -18,6 +18,7 @@ import SubscriptionPlans from "./pages/subscription/SubscriptionPlan";
 import Cms from "./pages/cms/Cms";
 import ViewBlog from "./pages/cms/Blogs/ViewBlogs";
 import EditBlogs from "./pages/cms/Blogs/EditBlogs";
+import ViewCampaign from "./pages/leads/campaign/ViewCampaign";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/finance" element={<Finance />} />
             <Route path="/editgmb" element={<EditGmbSet />} />
             <Route path="/leads" element={<Leads />} />
+            <Route path="/viewcampaign" element={<ViewCampaign/>} />
             <Route path="/cms" element={<Cms />} />
             <Route path="/viewblog" element={<ViewBlog />} />
             <Route path="/editblog" element={<EditBlogs />} />

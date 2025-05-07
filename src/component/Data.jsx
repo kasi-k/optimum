@@ -156,6 +156,65 @@ export const leadData = [
     status: "Pending",
   }
 ];
+export const LeadsTableData = [
+ 
+    {
+      name: "John Doe",
+      "contactNumber": "+1-234-567-8901",
+      "email": "john.doe@example.com",
+      "source": "Website",
+      "leadStatus": "New",
+      "notes": "Interested in premium package",
+      "assignedConsultant": "Jane Smith"
+    },
+    {
+      "name": "Emily Johnson",
+      "contactNumber": "+1-987-654-3210",
+      "email": "emily.johnson@example.com",
+      "source": "Referral",
+      "leadStatus": "In Progress",
+      "notes": "Requested a callback next week",
+      "assignedConsultant": "Mike Brown"
+    },
+    {
+      "name": "Michael Scott",
+      "contactNumber": "+1-555-123-4567",
+      "email": "michael.scott@example.com",
+      "source": "Campaign",
+      "leadStatus": "Closed",
+      "notes": "Converted to customer",
+      "assignedConsultant": "Kelly Kapoor"
+    },
+    {
+      name: "John Doe",
+      "contactNumber": "+1-234-567-8901",
+      "email": "john.doe@example.com",
+      "source": "Website",
+      "leadStatus": "New",
+      "notes": "Interested in premium package",
+      "assignedConsultant": "Jane Smith"
+    },
+    {
+      "name": "Emily Johnson",
+      "contactNumber": "+1-987-654-3210",
+      "email": "emily.johnson@example.com",
+      "source": "Referral",
+      "leadStatus": "In Progress",
+      "notes": "Requested a callback next week",
+      "assignedConsultant": "Mike Brown"
+    },
+    {
+      "name": "Michael Scott",
+      "contactNumber": "+1-555-123-4567",
+      "email": "michael.scott@example.com",
+      "source": "Campaign",
+      "leadStatus": "Closed",
+      "notes": "Converted to customer",
+      "assignedConsultant": "Kelly Kapoor"
+    }
+  
+  
+]
 
 export const PatientsData = [
   {

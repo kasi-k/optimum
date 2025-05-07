@@ -8,12 +8,14 @@ import { TbFileExport } from "react-icons/tb";
 import { useSearch } from "../../../component/SearchBar";
 import { campaignData } from "../../../component/Data";
 import CreateCampaign from "./CreateCampaign";
+import { useNavigate } from "react-router-dom";
 
 const Campaign = () => {
   const { searchTerm } = useSearch();
   const [filteredData, setFilteredData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [createCampaign,  setCreateCampaign] = useState(false)
+  const navigate = useNavigate()
 
   const itemsPerPage = 10;
   useEffect(() => {
@@ -103,7 +105,7 @@ const Campaign = () => {
                   <td>{data["CPL"]}</td>
                   <td className="pl-4 p-2.5 rounded-r-lg">
                     {" "}
-                    <p className="cursor-pointer bg-[#BAFFBA] text-green-600 w-fit rounded-sm py-1.5 px-1.5">
+                    <p onClick={ () =>navigate("/viewcampaign")} className="cursor-pointer bg-[#BAFFBA] text-green-600 w-fit rounded-sm py-1.5 px-1.5">
                       {" "}
                       <LuEye size={16} />
                     </p>

@@ -105,7 +105,7 @@ const Campaign = () => {
                   <td>{data["CPL"]}</td>
                   <td className="pl-4 p-2.5 rounded-r-lg">
                     {" "}
-                    <p onClick={ () =>navigate("/viewcampaign")} className="cursor-pointer bg-[#BAFFBA] text-green-600 w-fit rounded-sm py-1.5 px-1.5">
+                    <p onClick={ () =>navigate("viewcampaign")} className="cursor-pointer bg-[#BAFFBA] text-green-600 w-fit rounded-sm py-1.5 px-1.5">
                       {" "}
                       <LuEye size={16} />
                     </p>

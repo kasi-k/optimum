@@ -19,6 +19,7 @@ import Cms from "./pages/cms/Cms";
 import ViewBlog from "./pages/cms/Blogs/ViewBlogs";
 import EditBlogs from "./pages/cms/Blogs/EditBlogs";
 import ViewCampaign from "./pages/leads/campaign/ViewCampaign";
+import ViewLeads from "./pages/leads/leads/ViewLeads";
 
 const App = () => {
   return (
@@ -34,8 +35,15 @@ const App = () => {
             <Route path="/gmb" element={<Gmb />} />
             <Route path="/finance" element={<Finance />} />
             <Route path="/editgmb" element={<EditGmbSet />} />
-            <Route path="/leads" element={<Leads />} />
-            <Route path="/viewcampaign" element={<ViewCampaign/>} />
+            <Route path="/leads">
+              <Route index element={<Leads />} />
+              <Route path="viewcampaign">
+                <Route index element={<ViewCampaign />} />
+              </Route>
+              <Route path="viewleads">
+                <Route index element={<ViewLeads />} />
+              </Route>
+            </Route>
             <Route path="/cms" element={<Cms />} />
             <Route path="/viewblog" element={<ViewBlog />} />
             <Route path="/editblog" element={<EditBlogs />} />

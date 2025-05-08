@@ -9,6 +9,7 @@ import { TbFileExport } from "react-icons/tb";
 import { useSearch } from "../../../component/SearchBar";
 import { leadData } from "../../../component/Data";
 import Edit_leads from "./Edit_leads";
+import { useNavigate } from "react-router-dom";
 
 
 const Leads_Tab = () => {
@@ -16,6 +17,7 @@ const Leads_Tab = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [Edit_lead, setEdit_lead] = useState(false);
+  const navigate = useNavigate();
 
   const itemsPerPage = 10;
   useEffect(() => {
@@ -88,10 +90,10 @@ const Leads_Tab = () => {
             <td>{data.location}</td>
             <td>{data.status}</td>
             <td className="space-x-2 pl-4 p-2.5 rounded-r-lg">
-              <button onClick={()=>{setEdit_lead(true)}} className="bg-blue-200 p-1.5 rounded-sm">
+              <button onClick={()=>{setEdit_lead(true)}} className=" cursor-pointer bg-blue-200 p-1.5 rounded-sm">
                 <Pencil size={16} className="text-blue-600"/>
               </button>
-              <button className="bg-green-200 p-1.5 rounded-sm">
+              <button onClick={ () =>navigate("viewleads")} className=" cursor-pointer bg-green-200 p-1.5 rounded-sm">
                 <LuEye size={16} className="text-green-600" />
               </button>
             </td>

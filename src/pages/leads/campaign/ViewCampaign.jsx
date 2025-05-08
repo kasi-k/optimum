@@ -3,6 +3,7 @@ import NavBar from "../../../component/NavBar";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import LeadsTable from "./LeadsTable";
 import AppointmentsTable from "./AppointmentsTable";
+import InvoiceTable from "./InvoiceTable";
 
 const ViewCampaign = () => {
   const [isOpenLeads, setIsOpenLeads] = useState(false);
@@ -111,7 +112,7 @@ const ViewCampaign = () => {
             </p>
           </div>
         </div>
-        {isOpenInvoice && <div className="w-full col-span-12"></div>}
+        {isOpenInvoice && <div className="w-full col-span-12"><InvoiceTable/></div>}
       </div>
     </>
   );

@@ -340,6 +340,35 @@ export const campaigntData = [
     link: "#"
   },
 ];
+export const InvoiceTableData =[
+  {
+    "patientName": "John Doe",
+    "surgeryFee": 2500,
+    "additionalServices":"Follow-up Consultation", 
+   
+    "discount": 200,
+    "paymentMethod": "Credit Card",
+    "invoiceNumber": "INV-2025-001"
+  },
+  {
+    "patientName": "Emily Clark",
+    "surgeryFee": 3200,
+    "additionalServices":"Follow-up Consultation",
+
+    "discount": 300,
+    "paymentMethod": "Bank Transfer",
+    "invoiceNumber": "INV-2025-002"
+  },
+  {
+    "patientName": "Mark Evans",
+    "surgeryFee": 1800,
+    "additionalServices": "Follow-up Consultation",
+    "discount": 150,
+    "paymentMethod": "Cash",
+    "invoiceNumber": "INV-2025-003"
+  }
+]
+
 
 export const RoleData =[
   {

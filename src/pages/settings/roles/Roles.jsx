@@ -53,11 +53,11 @@ const Roles = () => {
     startIndex + itemsPerPage
   );
   const handleAddRole= () => {
-    navigate("/addrole");
+    navigate("addrole");
   };
 
   const handleEditRole = () => {
-    navigate("/editrole");
+    navigate("editrole");
   };
 
 

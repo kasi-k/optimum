@@ -44,14 +44,26 @@ const App = () => {
                 <Route index element={<ViewLeads />} />
               </Route>
             </Route>
-            <Route path="/cms" element={<Cms />} />
-            <Route path="/viewblog" element={<ViewBlog />} />
-            <Route path="/editblog" element={<EditBlogs />} />
+            <Route path="/cms">
+              <Route index element={<Cms />} />
+              <Route path="viewblog">
+                <Route index element={<ViewBlog />} />
+              </Route>
+              <Route path="editblog">
+                <Route index element={<EditBlogs />} />
+              </Route>
+            </Route>
             <Route path="/reports" element={<Report />} />
             <Route path="/subscription" element={<SubscriptionPlans />} />
-            <Route path="/setting" element={<Settings />} />
-            <Route path="/addrole" element={<AddRoleAccess />} />
-            <Route path="/Editrole" element={<EditRoleAccess />} />
+            <Route path="/setting">
+              <Route index element={<Settings />} />
+              <Route path="addrole">
+                <Route index element={<AddRoleAccess />} />
+              </Route>
+              <Route path="editrole">
+                <Route index element={<EditRoleAccess />} />
+              </Route>
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

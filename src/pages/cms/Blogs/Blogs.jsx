@@ -14,11 +14,11 @@ const Blogs = ({ post }) => {
   const displayedParagraphs = expanded ? paragraphs : paragraphs.slice(0, 1);
 
   const handleView = () =>{
-    navigate("/viewblog",{ state: { post } })
+    navigate("viewblog",{ state: { post } })
   }
 
   const handleEdit = () =>{
-    navigate("/editblog",{ state: { post } })
+    navigate("editblog",{ state: { post } })
   }
   return (
     <>

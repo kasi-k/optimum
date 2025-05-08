@@ -216,6 +216,37 @@ export const LeadsTableData = [
   
 ]
 
+export const AppointmentsTableData =[
+  {
+    "patientName": "John Doe",
+    "contactNumber": "+1234567890",
+    "email": "johndoe@example.com",
+    "appointmentDate": "2025-05-15",
+    "consultant": "Dr. Jane Smith",
+    "treatmentType": "Physical Therapy",
+    "notes": " requires a follow-up."
+  },
+  {
+    "patientName": "Emily Clark",
+    "contactNumber": "+9876543210",
+    "email": "emilyclark@example.com",
+    "appointmentDate": "2025-05-18",
+    "consultant": "Dr. Michael Johnson",
+    "treatmentType": "Dental Checkup",
+    "notes": "Routine checkup and cleaning."
+  },
+  {
+    "patientName": "Mark Evans",
+    "contactNumber": "+1122334455",
+    "email": "markevans@example.com",
+    "appointmentDate": "2025-05-20",
+    "consultant": "Dr. Sarah Lee",
+    "treatmentType": "Cardiology",
+    "notes": "Review heart rate monitoring data."
+  }
+]
+
+
 export const PatientsData = [
   {
     leadId: "#658957",

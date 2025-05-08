@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 import NavBar from "../../../component/NavBar";
-import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import LeadsTable from "./LeadsTable";
+import AppointmentsTable from "./AppointmentsTable";
 
 const ViewCampaign = () => {
-  const [isOpenLeads,setIsOpenLeads] = useState(false)
-  const toggleOpen = () =>{
-    setIsOpenLeads(!isOpenLeads)
-  }
+  const [isOpenLeads, setIsOpenLeads] = useState(false);
+  const [isOpenAppointments, setIsOpenAppointments] = useState(false);
+  const [isOpenInvoice, setIsOpenInvoice] = useState(false);
+  const toggleOpen = () => {
+    setIsOpenLeads(!isOpenLeads);
+  };
+  const toggleOpen1 = () => {
+    setIsOpenAppointments(!isOpenAppointments);
+  };
+
+  const toggleOpen2 = () => {
+    setIsOpenInvoice(!isOpenInvoice);
+  };
   return (
     <>
       <NavBar title="Campaign" pagetitle="View Campaign" />
@@ -58,31 +68,50 @@ const ViewCampaign = () => {
           <p className="font-bold text-base mx-4">Total Revenue</p>
           <p className="text-select_layout-dark text-xs mx-4">00000</p>
         </div>
-        <div  className="col-span-12 p-3.5 dark:bg-layout-dark bg-white w-full rounded-lg">
-          <div onClick = {toggleOpen} className="mx-4 flex justify-between items-center  ">
-          <p className="font-bold text-base ">Leads</p>
-          <p className="">
-          {isOpenLeads ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          </p>
+        <div className="col-span-12 p-3.5 dark:bg-layout-dark bg-white w-full rounded-lg">
+          <div
+            onClick={toggleOpen}
+            className="mx-4 flex justify-between items-center  "
+          >
+            <p className="font-bold text-base ">Leads</p>
+            <p className="">
+              {isOpenLeads ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </p>
           </div>
         </div>
-        {isOpenLeads &&
+        {isOpenLeads && (
           <div className="w-full col-span-12">
-             <LeadsTable/>
+            <LeadsTable />
           </div>
-          }
-        <div className="col-span-12 p-3.5 dark:bg-layout-dark bg-white flex justify-between items-center   w-full rounded-lg">
-          <p className="font-bold text-base mx-4">Appointmnets</p>
-          <p className="mx-4">
-        
-          </p>
+        )}
+        <div className="col-span-12 p-3.5 dark:bg-layout-dark bg-white    w-full rounded-lg">
+          <div
+            onClick={toggleOpen1}
+            className="mx-4 flex justify-between items-center  "
+          >
+            <p className="font-bold text-base ">Appointments</p>
+            <p className="">
+              {isOpenAppointments ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </p>
+          </div>
         </div>
-        <div className="col-span-12 p-3.5 dark:bg-layout-dark bg-white flex justify-between items-center   w-full rounded-lg">
-          <p className="font-bold text-base mx-4">Invoice</p>
-          <p className="mx-4">
-            <IoIosArrowDown />
-          </p>
+        {isOpenAppointments && (
+          <div className="w-full col-span-12">
+            <AppointmentsTable />
+          </div>
+        )}
+        <div className="col-span-12 p-3.5 dark:bg-layout-dark bg-white    w-full rounded-lg">
+          <div
+            onClick={toggleOpen2}
+            className="mx-4 flex justify-between items-center  "
+          >
+            <p className="font-bold text-base ">Invoice</p>
+            <p className="">
+              {isOpenInvoice ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </p>
+          </div>
         </div>
+        {isOpenInvoice && <div className="w-full col-span-12"></div>}
       </div>
     </>
   );
